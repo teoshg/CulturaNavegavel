@@ -1,3 +1,4 @@
+import { HomeComponent } from './navmanu/home/home.component';
 import { MenuModule } from './navmanu/menu.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,7 +10,9 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent
+  ],
 
   imports: [
     BrowserModule,
