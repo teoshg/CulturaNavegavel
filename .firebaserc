@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "culturanavegavel-f0d89"
+  },
+  "targets": {
+    "culturanavegavel-f0d89": {
+      "hosting": {
+        "cultura_navegavel": [
+          "culturanavegavel-f0d89"
+        ]
+      }
+    }
+  }
+}

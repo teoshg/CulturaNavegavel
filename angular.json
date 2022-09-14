@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "cultura_navegavel:build:production",
+            "firebaseProject": "culturanavegavel-f0d89",
+            "firebaseHostingSite": "culturanavegavel-f0d89"
+          }
         }
       }
     }
