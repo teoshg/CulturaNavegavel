@@ -9,22 +9,36 @@
         <li class="nav-item">
           <a class="nav-link active" routerLinkActive="active" [routerLink]="['/home']">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Destinos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Continentes</a></li>
+            <li><a class="dropdown-item" href="#">Brasil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Turismo Cannabico</a></li>
+          </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Produtos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Livros</a></li>
+            <li><a class="dropdown-item" href="#">Roteiros</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Trabalhos de Fotografia</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link" href="#">Sobre Eu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contatos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Mapa Interativo</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -34,7 +48,6 @@
     </div>
   </div>
 </nav>
-
 <div class="container">
   <router-outlet></router-outlet>
 </div>
