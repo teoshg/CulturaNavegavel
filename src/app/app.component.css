@@ -1,6 +1,68 @@
-.navbar.navbar-expand-lg.bg-light {
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+#topo #logo .logo {
+  display: none;
+}
+#topo .navbar.navbar-expand-lg.bg-light {
   padding: 8px;
 }
-.navbar.navbar-expand-lg.bg-light .container-fluid .navbar-brand {
+#topo .container-fluid .navbar-brand {
   margin: 0 auto;
+  padding-right: 40px;
+}
+#topo .container-fluid #navbarSupportedContent .navbar-nav {
+  margin: 0 auto;
+}
+#topo .container-fluid #navbarSupportedContent .navbar-nav li a {
+  padding: 8px;
+}
+#topo .container-fluid #navbarSupportedContent .navbar-nav .nav-item {
+  margin: 0 auto;
+}
+
+@media (min-width: 893px) {
+  #topo .topBar {
+    display: block;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d7ebef;
+  }
+  #topo #logo {
+    display: inline-block;
+    min-height: 130px;
+    line-height: 130px;
+    background-color: #ffffff;
+    width: 100%;
+  }
+  #topo #logo .logo {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+  }
+  .navbar.navbar-expand-lg.bg-light {
+    padding: 8px;
+  }
+  .container-fluid #navbarSupportedContent .navbar-nav {
+    margin: 0 auto;
+  }
+  .container-fluid #navbarSupportedContent .navbar-nav .nav-item {
+    margin: 0 auto;
+    position: relative;
+  }
+  .container-fluid #navbarSupportedContent .navbar-nav .nav-item a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: #d7ebef;
+    bottom: -1em;
+    transition: all ease-in-out 250ms;
+  }
+  .container-fluid #navbarSupportedContent .navbar-nav .nav-item a:hover::after {
+    width: 60%;
+  }
+  .container-fluid .navbar-brand {
+    display: none;
+  }
 }/*# sourceMappingURL=app.component.css.map */
