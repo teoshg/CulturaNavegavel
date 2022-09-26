@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './navmanu/home/home.component';
 import { MenuModule } from './navmanu/menu.module';
 import { NgModule } from '@angular/core';
@@ -8,16 +9,19 @@ import { AppComponent } from './app.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
     MenuModule,
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
   ],

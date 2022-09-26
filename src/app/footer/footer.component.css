@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+a {
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.footer {
+    position: relative;
+    padding-top: 45px;
+    background: #3aa7bd;
+}
+
+.footer .footer-about,
+.footer .footer-subscribe,
+.footer .footer-contact,
+.footer .footer-links,
+.footer .footer-project {
+    position: relative;
+    margin-bottom: 35px;
+    color: #999999;
+}
+
+.footer .footer-links a {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    color: #d7ebef;
+    display: block;
+}
+
+.footer .footer-links a:last-child {
+    margin: 0;
+}
+
+.footer .footer-links a:hover {
+    color: #0085ff;
+}
+
+.footer .footer-links a::before {
+    position: absolute;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: 0;
+}
+
+.footer .footer-subscribe {
+    text-align: center;
+    color: #d7ebef;
+    margin-bottom: 35px;
+    max-width: 700px;
+}
+
+.footer .footer-subscribe input {
+    background: rgba(257, 256, 256, .15);
+    margin-bottom: 15px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+}
+
+.footer .footer-subscribe .btn {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3aa7bd;
+    background: #d7ebef;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+    transition: .3s;
+}
+
+.footer .footer-subscribe .btn:hover {
+    color: #0085ff;
+    background: #ffffff;
+}
+
+.footer .footer-subscribe .btn:focus {
+    box-shadow: none;
+}
+
+.footer .footer-project {
+    display: inline-block;
+    min-height: 130px;
+    line-height: 130px;
+    width: 100%;
+}
+
+.footer.footer-project #logo {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.footer .footer-social {
+    position: relative;
+	top: -30px;
+}
+
+.footer .footer-social a {
+    text-align: center;
+    color: #d7ebef;
+    font-size: 14px;
+    border: 1px solid #d7ebef;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 6px 0;
+    border-radius: 35px;
+}
+
+.footer .footer-social a:hover {
+    color: #ffffff;
+    background: #0085ff;
+    border-color: #0085ff;
+}
+.footer .copyright {
+    position: relative;
+    padding: 25px 0;
+    background: #3aa7bd;
+	text-align: center;
+}
+
+.footer .copyright .copy-text p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #d7ebef;
+}
+
+.footer .copyright .copy-text p a {
+    color: #d7ebef;
+    text-decoration: none;
+}
+
+.footer .copyright .copy-text p a:hover {
+    color: #0085ff;
+}
