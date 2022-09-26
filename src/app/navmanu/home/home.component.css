@@ -42,8 +42,9 @@ body {
   }
   
   
-  /* Featurettes
-  ------------------------- */
+  .featurette-1 {
+    background: #d7ebef;
+  }
   
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
