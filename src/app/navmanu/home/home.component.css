@@ -7,6 +7,11 @@ body {
         padding-bottom: 3rem;
         color: #5a5a5a;
     }
+#first-section {
+
+  margin: 70px auto;
+
+}
   
   
   /* CUSTOMIZE THE CAROUSEL
@@ -73,4 +78,23 @@ body {
       margin-top: 7rem;
     }
   }
-  
+  @media (min-width: 893px) {
+    .featurette-1 {
+      border-radius: 100px;
+    }
+    .featurette-1 .img-featurette-1 {
+      border-radius: 50%;
+      padding: 10px;
+    }
+    .featurette-1 h2 {
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .featurette-1 .lead {
+      text-align: center;
+      padding: 0 5%;
+    }
+
+
+  }

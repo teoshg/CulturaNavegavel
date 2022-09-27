@@ -1,22 +1,24 @@
-<script src="https://kit.fontawesome.com/7f5a6e597f.js" crossorigin="anonymous"></script>
-
 <div id="topo">
   <div class="topBar">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
     <div class="social-topBar">
-      <a href="https://instagram.com/">
-        <img src="../../assets/image/instagram.png" alt="logo do intagram">
+      <a class="social-icons-topBar" href="https://instagram.com/">
+        <i class="fa-brands fa-instagram"></i>
       </a>
-      <a href="https://facebook.com/">
+      <a class="social-icons-topBar" href="https://facebook.com/">
         <i class="fa-brands fa-facebook"></i>
       </a>
-      <a href="https://pinterest.com/">
-        <img src="../../assets/image/pinterest.png" alt="logo do pinterest">
+      <a class="social-icons-topBar" href="https://pinterest.com/">
+        <i class="fa-brands fa-pinterest"></i>
       </a>
-      <a href="https://youtube.com/">
-        <img src="../../assets/image/youtube.png" alt="logo do youtube">
+      <a class="social-icons-topBar" href="https://youtube.com/">
+        <i class="fa-brands fa-youtube"></i>
       </a>
-      <a href="https://twitter.com/">
-        <img src="../../assets/image/twitter.png" alt="logo do twitter">
+      <a class="social-icons-topBar" href="https://twitter.com/">
+        <i class="fa-brands fa-square-twitter"></i>
       </a>
     </div>
   </div>
@@ -43,7 +45,14 @@
               <li><a class="dropdown-item" href="#">Mundo</a></li>
               <li><a class="dropdown-item" href="#">Brasil</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Turismo Cannabico</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Turismo Cannabico
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">teste</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -67,10 +76,6 @@
             <a class="nav-link">Mapa Interativo</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
       <a class="navbar-brand" href="#">
         <img src="../../assets/image/logo-mobile.png" alt="" width="180" height="auto">
