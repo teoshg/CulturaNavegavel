@@ -2,6 +2,9 @@
 #topo {
   font-family: "Poppins";
 }
+#topo .topBar .d-flex {
+  display: none !important;
+}
 #topo #logo .logo {
   display: none;
 }
