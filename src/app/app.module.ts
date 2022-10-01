@@ -1,5 +1,4 @@
 import { HttpClientModule } from '@angular/common/http';
-import { HomeComponent } from './navmanu/home/home.component';
 import { MenuModule } from './navmanu/menu.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
