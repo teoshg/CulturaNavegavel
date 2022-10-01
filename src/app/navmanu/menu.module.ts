@@ -13,7 +13,6 @@ import { ContactoComponent } from './contacto/contacto.component';
     HomeComponent,
     NaveganteComponent,
     ContactoComponent,
-    
   ],
   imports: [
     CommonModule,

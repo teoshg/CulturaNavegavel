@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './navmanu/home/home.component';
 import { NaveganteComponent } from './navmanu/navegante/navegante.component';
-import { ContactoComponent } from './navmanu/contacto/contacto.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
