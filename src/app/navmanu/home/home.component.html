@@ -8,37 +8,15 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-                <img src="assets/images/plano2.jpg" class="card-img" alt="#">
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                    <h1>Example headline.</h1>
-                    <p>Some representative placeholder content for the first slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                    </div>
+                    <img src="assets/images/carrossel1.jpg" class="card-img" alt="#">
                 </div>
-                </div>
+
                 <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-        
-                <div class="container">
-                    <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>Some representative placeholder content for the second slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                    </div>
+                    <img src="assets/images/carossel2.jpg" class="card-img" alt="#">
                 </div>
-                </div>
+
                 <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-        
-                <div class="container">
-                    <div class="carousel-caption text-end">
-                    <h1>One more for good measure.</h1>
-                    <p>Some representative placeholder content for the third slide of this carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                    </div>
-                </div>
+                    <img src="assets/images/carossel3.jpg" class="card-img" alt="#">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -81,26 +59,26 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="assets/images/plano3.jpg" class="card-img" alt="#">
+                        <img src="assets/images/destinos.jpg" class="card-img" alt="#">
                         <div class="card-img-overlay">
-                          <h5 class="card-title">Destinos</h5>
+                          <button class="card-title btn btn-primary" [routerLink]="['/destinos']">Destinos</button>
                           <div class="border-title"></div>
                         </div>
                     </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="assets/images/plano3.jpg" class="card-img" alt="#">
+                        <img src="assets/images/experiencias.jpg" class="card-img" alt="#">
                         <div class="card-img-overlay">
-                          <h5 class="card-title">Experiências</h5>
+                            <button class="card-title btn btn-primary">Experiências</button>
                         </div>
                     </div>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="assets/images/plano3.jpg" class="card-img" alt="#">
+                        <img src="assets/images/dicas.jpg" class="card-img" alt="#">
                         <div class="card-img-overlay">
-                          <h5 class="card-title">Dicas</h5>
+                          <button class="card-title btn btn-primary">Dicas</button>
                         </div>
                     </div>
                 </div><!-- /.col-lg-4 -->
@@ -160,11 +138,53 @@
                     </div>
                 </div>
             </div>
-        
-            <!-- <hr class="featurette-divider"> -->
-        
-            <!-- /END THE FEATURETTES -->
-    
+
+            <!-- Latest Posts -->
+            <section>
+                <div class="container ultimo-post">
+                    <header class="mb-5"> 
+                        <h2>Ultimas Postagens</h2>
+                    </header>
+                    <div class="row gy-4">
+                        <div class="col-md-4"><a class="mb-3" href="post.html"><img class="img-fluid" src="assets/images/destinos.jpg" alt="..."/></a>
+                        <div class="d-flex align-items-center justify-content-between mb-2"><small class="text-gray-500">20 May | 2016</small><a class="small fw-bold text-uppercase small" href="!#"></a></div>
+                        <h3 class="h4"><a class="text-dark" href="post.html">Ways to remember your important ideas</a></h3>
+                        <p class="text-muted text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                        <div class="col-md-4"><a class="mb-3" href="post.html"><img class="img-fluid" src="assets/images/dicas.jpg" alt="..."/></a>
+                        <div class="d-flex align-items-center justify-content-between mb-2"><small class="text-gray-500">20 May | 2016</small><a class="small fw-bold text-uppercase small" href="!#"></a></div>
+                        <h3 class="h4"><a class="text-dark" href="post.html">Diversity in Engineering: Effect on Questions</a></h3>
+                        <p class="text-muted text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                        <div class="col-md-4"><a class="mb-3" href="post.html"><img class="img-fluid" src="assets/images/experiencias.jpg" alt="..."/></a>
+                        <div class="d-flex align-items-center justify-content-between mb-2"><small class="text-gray-500">20 May | 2016</small><a class="small fw-bold text-uppercase small" href="!#"></a></div>
+                        <h3 class="h4"><a class="text-dark" href="post.html">Alberto Savoia Can Teach You About Interior</a></h3>
+                        <p class="text-muted text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row gy-4">
+                        <div class="col-md-4"><a class="mb-3" href="post.html"><img class="img-fluid" src="assets/images/europa.jpg" alt="..."/></a>
+                        <div class="d-flex align-items-center justify-content-between mb-2"><small class="text-gray-500">20 May | 2016</small><a class="small fw-bold text-uppercase small" href="!#"></a></div>
+                        <h3 class="h4"><a class="text-dark" href="post.html">Alberto Savoia Can Teach You About Interior</a></h3>
+                        <p class="text-muted text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                        <div class="col-md-4"><a class="mb-3" href="post.html"><img class="img-fluid" src="assets/images/africa.jpg" alt="..."/></a>
+                        <div class="d-flex align-items-center justify-content-between mb-2"><small class="text-gray-500">20 May | 2016</small><a class="small fw-bold text-uppercase small" href="!#"></a></div>
+                        <h3 class="h4"><a class="text-dark" href="post.html">Ways to remember your important ideas</a></h3>
+                        <p class="text-muted text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                        <div class="col-md-4"><a class="mb-3" href="post.html"><img class="img-fluid" src="assets/images/pelomundo1.jpg" alt="..."/></a>
+                        <div class="d-flex align-items-center justify-content-between mb-2"><small class="text-gray-500">20 May | 2016</small><a class="small fw-bold text-uppercase small" href="!#"></a></div>
+                        <h3 class="h4"><a class="text-dark" href="post.html">Diversity in Engineering: Effect on Questions</a></h3>
+                        <p class="text-muted text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
         </div><!-- /.container -->
     </main>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

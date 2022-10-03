@@ -31,6 +31,7 @@ body {
 
 .carousel {
   margin-bottom: 4rem;
+
 }
 
 .container.marketing {
@@ -189,5 +190,10 @@ body {
 @media (min-width: 1920px) {
   .container.marketing {
     min-width: 1920px !important;
+  }
+
+  .container .ultimo-post {
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 }/*# sourceMappingURL=home.component.css.map */
