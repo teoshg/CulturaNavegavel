@@ -104,7 +104,9 @@ a:focus {
     margin: 0 auto;
     width: 500px;
 }
-
+.footer-project .logo img {
+    width: 100%;
+}
 .footer .footer-social {
     position: relative;
 	top: -30px;

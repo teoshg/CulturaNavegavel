@@ -1,24 +1,61 @@
+//    Tipografia
+$gFontURI: 		'https://fonts.googleapis.com/css?family='
+$font-size: 100%
+$awesome: "FontAwesome"
+$font-stack: 'Poppins', sans-serif
+$family-1: "Poppins"
+$family-2: "Poppins"
+// $family-2-quoted: "Prata"
+// ===========================================
+//         		IMPORTING FONTS
+// ===========================================
+@import url("#{$gFontURI}#{$family-1}:300,400,500,600,700")
+
+// ===================================
+//             CORES
+// ===================================
+$white: 				#ffffff
+$w: 					#ffffff
+$hotcolor: 				#3aa7bd
+$hotcolor-2: 			$hotcolor
+$hotcolor-3: 			$hotcolor
+$primary-color:			#040503
+$links-geral:			$primary-color
+$selection-color: 		rgba($hotcolor, .1)
+$secondary-color: 		#707070
+$placeholder: 			#707070
+$contrast-color: 		darken($hotcolor, 12)
+$whatsapp: 			    #009846
+
 body
     padding-top: 3rem
     color: #5a5a5a
 #first-section 
     margin: 70px auto
+    padding: 0
+    max-width: 100%
+    width: 100%
     .first-section-title
         max-width: 300px
         margin: 0 auto
         img
             max-width: 300px
     .row
+        width: 100%
         .bag-first-section,
         .map-first-section
             padding: 0
             img
-                max-width: 65px
+                width: 100%
                 display: flex
         .bag-first-section
-            margin-top: 100px
+            margin-top: 300px
+        .map-first-section
+            margin-top: 60px
         .text-first-section
-            font-size: 3vw
+            font-size: 1rem
+        .col-6
+            padding: 0
 
 
   
@@ -51,36 +88,45 @@ body
 
 .marketing
     .row
+        --bs-gutter-x: 0
         .col-lg-4
             --bs-gutter-x: 0
             padding: 0 5%
     .card-img-overlay
-        border: 1px solid #3aa7bd
+        border: 1px solid $hotcolor
         // .border-title
         //     width: 320px
         //     margin: 0 auto
-        //     border: 1px solid #3aa7bd
+        //     border: 1px solid $hotcolor
         //     padding: 0
         //     position: relative
         //     top: 101%
+        ::hover
+            border-color: $hotcolor
         .card-title
             width: 180px
             margin: 0 auto
-            background: #3aa7bd
+            background: $hotcolor
             padding: 4px 10px
             position: relative
             color: #fff
             text-transform: uppercase
             top: 101%
-        
-        
-
-
-
+    .col-lg-4
+        margin-bottom: 2.5rem
+        .card
+            --bs-card-inner-border-radius: 0
+            border-color: $hotcolor
+            .card-img
+                padding: 10px
+        .card-img-overlay
+            button
+                border: 1px solid $hotcolor
 .featurette-1 
     background: #d7ebef
     width: 100%
     margin-top: 30px
+    padding: 20px
     .featurette
         --bs-gutter-x: 0
     .row-feature-section
@@ -88,7 +134,7 @@ body
         margin: 50px auto
         text-align: center
         font-weight: 600
-        color: #3aa7bd
+        color: $hotcolor
         text-transform: uppercase
     .lead
         text-align: center
@@ -96,11 +142,29 @@ body
         font-weight: 400
         color: #212121
     .div-img-a-viajante
+        margin: 0 auto
         .img-a-viajante
-            border-radius: 50%
             padding: 10px
+            background: inherit
+            border-radius: 0
+            border-color: $w
+            width: calc(100% - 20px)
+    .card-title
+        display: block
+        width: 180px
+        margin: 10px auto
+        background: $hotcolor
+        padding: 4px 10px
+        position: relative
+        color: #fff
+        text-transform: uppercase
 .featurette-2
-    background: #3aa7bd
+    background: $hotcolor
+    .featurette
+        --bs-gutter-x: 0
+        padding: 20px
+        .div-navegando
+            margin: 0 auto
     h2
         margin: 50px auto
         text-align: center
@@ -113,12 +177,27 @@ body
         font-weight: 400
         color: #fff
     .img-navegando
-        border-radius: 50%
+        padding: 10px
+        background: inherit
+        border-radius: 0
+        border-color: $w
+    .card-title
+        display: block
+        width: 180px
+        margin: 10px auto
+        background: $w
+        padding: 4px 10px
+        position: relative
+        color: $hotcolor
+        text-transform: uppercase
 
 .featurette-3
     background: #d7ebef
+    .featurette
+        --bs-gutter-x: 0
+        padding: 20px
     h2
-        margin: 50px auto
+        margin: 50px auto 30px
         text-align: center
         font-weight: 600
         color: #3aa7bd
@@ -128,6 +207,21 @@ body
         padding: 0 5%
         font-weight: 400
         color: #212121
+    svg
+        width: calc(100% - 20px)
+        padding: 10px
+        background: inherit
+        border-radius: 0
+        border-color: $w
+    .card-title
+        display: block
+        width: 180px
+        margin: 10px auto
+        background: $hotcolor
+        padding: 4px 10px
+        position: relative
+        color: #fff
+        text-transform: uppercase
 
 
 
@@ -156,15 +250,24 @@ body
     .featurette-heading
         margin-top: 7rem
 
-@media (min-width: 893px) 
+@media (min-width: 500px)
+    #first-section
+        .row
+            .text-first-section
+                font-size: 1.2rem
+@media (min-width: 768px) 
     .featurette-1 
         width: 100%
         h2 
             margin: 50px auto
             text-align: center
+        .div-img-a-viajante
+            max-width: 400px
         .lead 
             text-align: center
             padding: 0 5%
+        .row-feature-section
+            align-self: center
     .featurette-1 .img-featurette-1 
         border-radius: 50%
         padding: 10px
@@ -176,16 +279,30 @@ body
                 max-width: 700px
         .row
             .bag-first-section
+                margin-top: 80px
                 img
-                    max-width: 220px
+                    max-width: 280px
             .text-first-section
-                font-size: 2vw
+                font-size: 1.4rem
             .map-first-section
+                margin-top: 0px
                 img
-                    max-width: 220px
-            
-    
-
+                    max-width: 280px
+    .featurette-2
+        .row-feature-section
+            align-self: center
+        .featurette
+            .div-navegando
+                margin: 0 auto
+    .marketing
+        .row
+            .col-lg-4
+                padding: 0 1%
+    .featurette-3
+        .row-feature-section
+            align-self: center
+        .col-md-5
+            max-width: 400px
 
 
 
