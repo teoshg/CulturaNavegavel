@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 body {
-  padding-top: 3rem;
   color: #5a5a5a;
 }
 
@@ -234,62 +233,65 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .featurette-1 {
+  body {
+    padding-top: 0;
+  }
+  body .featurette-1 {
     width: 100%;
   }
-  .featurette-1 h2 {
+  body .featurette-1 h2 {
     margin: 50px auto;
     text-align: center;
   }
-  .featurette-1 .div-img-a-viajante {
+  body .featurette-1 .div-img-a-viajante {
     max-width: 400px;
   }
-  .featurette-1 .lead {
+  body .featurette-1 .lead {
     text-align: center;
     padding: 0 5%;
   }
-  .featurette-1 .row-feature-section {
+  body .featurette-1 .row-feature-section {
     align-self: center;
   }
-  .featurette-1 .img-featurette-1 {
+  body .featurette-1 .img-featurette-1 {
     border-radius: 50%;
     padding: 10px;
   }
-  #first-section .first-section-title {
+  body #first-section .first-section-title {
     max-width: 700px;
     margin: 0 auto;
   }
-  #first-section .first-section-title img {
+  body #first-section .first-section-title img {
     max-width: 700px;
   }
-  #first-section .row .bag-first-section {
+  body #first-section .row .bag-first-section {
     margin-top: 80px;
   }
-  #first-section .row .bag-first-section img {
+  body #first-section .row .bag-first-section img {
     max-width: 280px;
   }
-  #first-section .row .text-first-section {
+  body #first-section .row .text-first-section {
     font-size: 1.4rem;
   }
-  #first-section .row .map-first-section {
+  body #first-section .row .map-first-section {
     margin-top: 0px;
   }
-  #first-section .row .map-first-section img {
+  body #first-section .row .map-first-section img {
     max-width: 280px;
   }
-  .featurette-2 .row-feature-section {
+  body .featurette-2 .row-feature-section {
     align-self: center;
   }
-  .featurette-2 .featurette .div-navegando {
+  body .featurette-2 .featurette .div-navegando {
     margin: 0 auto;
   }
-  .marketing .row .col-lg-4 {
+  body .marketing .row .col-lg-4 {
     padding: 0 1%;
   }
-  .featurette-3 .row-feature-section {
+  body .featurette-3 .row-feature-section {
     align-self: center;
   }
-  .featurette-3 .col-md-5 {
+  body .featurette-3 .col-md-5 {
     max-width: 400px;
   }
 }
