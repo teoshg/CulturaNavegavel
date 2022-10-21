@@ -8,7 +8,7 @@ import { PoesiasComponent } from './poesias/poesias.component';
 import { TurismocannabicoComponent } from './turismocannabico/turismocannabico.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from 'app/app-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -26,6 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule
     
   ]
 })

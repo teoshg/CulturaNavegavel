@@ -44,10 +44,29 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" [routerLink]="['/destinos']">Destinos</a>
                 <ul class="dropdown-menu dropdown-submenu">
-                  <li><a class="dropdown-item" [routerLink]="['/pelomundo']">Pelo Mundo</a></li>
+
+                  <li><a class="dropdown-item" [routerLink]="['/pelomundo']">Pelo Mundo</a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li><a class="dropdown-item">Africa</a>
+                        
+                      </li>
+
+                      <li><a class="dropdown-item" [routerLink]="['/americas']">Américas</a>
+                        <ul class="dropdown-menu dropdown-submenu">
+                          <li><a class="dropdown-item"[routerLink]="['/uruguai']">Uruguai</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a class="dropdown-item">Europa</a>
+                      
+                      </li>
+                    </ul>
+                  </li>
+
                   <li><a class="dropdown-item" href="#">Brasil</a></li>
                 </ul>
               </li>
+
               <li><a class="dropdown-item" href="#">Dicas</a></li>
               <li><a class="dropdown-item" href="#">Experiências</a></li>
               <li><hr class="dropdown-divider"></li>
@@ -55,16 +74,8 @@
               <li><a class="dropdown-item" href="#">Turismo Cannabico</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Produtos
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Livros</a></li>
-              <li><a class="dropdown-item" href="#">Roteiros</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Trabalhos de Fotografia</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/produtos']">Produtos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/sobre']">Sobre</a>

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from 'app/app-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PelomundoComponent } from './pelomundo/pelomundo.component';
 import { BrasilComponent } from './brasil/brasil.component';
 
@@ -22,6 +22,7 @@ import { BrasilComponent } from './brasil/brasil.component';
     ReactiveFormsModule,
     PelomundoModule,
     BrasilModule,
+    FormsModule,
     
   ]
 })

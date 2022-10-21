@@ -42,11 +42,15 @@
                 <div class="col-md-4">
                     <div class="container footer-subscribe">
                        <p>Receba os conteúdos em primeira mão!</p>
-                        <div class="row form">
-                            <input class="form-control" placeholder="Seu Nome">
-                            <input class="form-control" placeholder="Seu E-mail">
-                            <button class="btn">Subscribe</button>
-                        </div>
+
+                       <form #f="ngForm" [formGroup]="scribeForm" (ngSubmit)="onSubmit()">
+                            <div class="row form">
+                                <input formControlName="nome" placeholder="Seu Nome">
+                                <input formControlName="emaill" placeholder="Seu E-mail">
+                                <input type="submit" value="Enviar" class="btn btn-info" disable [disabled]="!f.valid">
+                            </div>
+                       </form>
+
                     </div>
                 </div>
 
@@ -55,7 +59,7 @@
                 <div class="col-md-3">
                     <div class="footer-project">
                         <a class="logo" href="#">
-                            <img src="../../assets/image/logo.png" alt="" width="369" height="auto">
+                            <img src="../../assets/image/logo.png" alt="" width="400" height="auto">
                         </a>
                     </div>
                     <div class="text-center">
@@ -78,13 +82,9 @@
                     <div class="copy-text">
                         <p>&copy; 2022 <a href="#">Cultuva Navegavel</a> - Todos os direitos reservados. Conteúdo protegido por direitos autorais. Proibida a reprodução total ou parcial sem autorização da autora.</p>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
+        
     </div>
-
 </body>

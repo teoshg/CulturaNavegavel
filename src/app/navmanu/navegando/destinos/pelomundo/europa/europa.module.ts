@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from 'app/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PortugalComponent } from './portugal/portugal.component';
@@ -44,6 +44,7 @@ import { HolandaComponent } from './holanda/holanda.component';
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class EuropaModule { }
