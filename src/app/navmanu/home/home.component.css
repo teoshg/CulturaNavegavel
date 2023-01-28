@@ -41,9 +41,12 @@ body {
   padding: 0;
 }
 
-.carousel {
+.carouselhome {
+  margin-top: 25px;
   margin-bottom: 4rem;
+  
 }
+
 
 .container.marketing {
   --bs-gutter-x: 0;

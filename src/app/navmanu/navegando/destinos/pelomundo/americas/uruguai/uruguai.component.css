@@ -5,6 +5,7 @@
 .overlay-content {
     position: relative;
     z-index: 20;
+    height: 500px;
   }
   
   @media (min-width: 576px) {
@@ -620,3 +621,16 @@ ol.list-numbers li::before {
   margin-left: 70px;
 }
 
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  max-width: 100%;
+  height: auto;
+}
