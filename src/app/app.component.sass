@@ -1,0 +1,104 @@
+//    Tipografia
+$gFontURI: 		'https://fonts.googleapis.com/css?family='
+$font-size: 100%
+$awesome: "FontAwesome"
+$font-stack: 'Poppins', sans-serif
+$family-1: "Poppins"
+$family-2: "Poppins"
+// $family-2-quoted: "Prata"
+// ===========================================
+//         		IMPORTING FONTS
+// ===========================================
+@import url("#{$gFontURI}#{$family-1}:300,400,500,600,700")
+
+// ===================================
+//             CORES
+// ===================================
+$white: 				#ffffff
+$w: 					#ffffff
+$hotcolor: 				#d7ebef
+$hotcolor-2: 			$hotcolor
+$hotcolor-3: 			$hotcolor
+$primary-color:			#040503
+$links-geral:			$primary-color
+$selection-color: 		rgba($hotcolor, .1)
+$secondary-color: 		#707070
+$placeholder: 			#707070
+$contrast-color: 		darken($hotcolor, 12)
+$whatsapp: 			    #009846
+
+#topo
+    .topBar
+        .d-flex
+            display: none!important
+        .social-topBar
+            width: fit-content
+            margin: 0 0 0 auto
+            padding: 0 20px
+            .social-icons-topBar
+                margin-right: 3px
+                i
+                    color: #000
+    font-family: $family-1
+    #logo
+        .logo
+            display: none
+    .navbar.navbar-expand-lg.bg-light 
+        padding: 8px
+    .container-fluid
+        .navbar-brand
+            margin: 0 auto
+            padding-right: 40px
+            
+        #navbarSupportedContent
+            .navbar-nav
+                margin: 0 auto
+                li
+                    a
+                        text-transform: uppercase
+                        font-weight: 600
+                        padding: null 8px
+                .nav-item
+                    margin: 0 auto        
+@media (min-width: 893px) 
+    #topo
+        .topBar
+            display: block
+            height: 28px
+            margin-left: auto
+            margin-right: auto
+            background-color: $hotcolor-2
+            .d-flex
+                display: none!important
+        #logo
+            display: inline-block
+            min-height: 130px
+            line-height: 130px
+            background-color: $w
+            width: 100%
+            .logo
+                display: block
+                margin: 0 auto
+                width: 500px
+    .navbar.navbar-expand-lg.bg-light 
+        padding: 8px
+    .container-fluid
+        #navbarSupportedContent
+            .navbar-nav
+                margin: 0 auto
+                .nav-item
+                    margin: 0 auto
+                    position: relative
+                .nav-item a::after 
+                    content: ""
+                    position: absolute
+                    display: block
+                    height: 0.4em
+                    width: 0%
+                    background-color: $hotcolor
+                    bottom: -1em
+                    transition: all ease-in-out 250ms
+                .nav-item a:hover::after
+                    width: 60%
+        .navbar-brand
+            display: none

@@ -1,0 +1,97 @@
+<div id="topo">
+  <div class="topBar">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <div class="social-topBar">
+      <a class="social-icons-topBar" href="https://instagram.com/">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a class="social-icons-topBar" href="https://facebook.com/">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a class="social-icons-topBar" href="https://youtube.com/">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+  </div>
+  <div id="logo">
+    <a class="logo" href="#">
+      <img src="../../assets/image/logo.png" alt="logomarca" width="500" height="auto">
+    </a>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" routerLinkActive="active" [routerLink]="['/home']">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Navegando 
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" [routerLink]="['/destinos']">Destinos</a>
+                <ul class="dropdown-menu dropdown-submenu">
+
+                  <li><a class="dropdown-item" [routerLink]="['/pelomundo']">Pelo Mundo</a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li><a class="dropdown-item">Africa</a>
+                        
+                      </li>
+
+                      <li><a class="dropdown-item" [routerLink]="['/americas']">Américas</a>
+                        <ul class="dropdown-menu dropdown-submenu">
+                          <li><a class="dropdown-item"[routerLink]="['/uruguai']">Uruguai</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a class="dropdown-item">Europa</a>
+                      
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a class="dropdown-item" href="#">Brasil</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="#">Dicas</a></li>
+              <li><a class="dropdown-item" href="#">Experiências</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Poesias</a></li>
+              <li><a class="dropdown-item" href="#">Turismo Cannabico</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/produtos']">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/sobre']">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contacto']">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/mapa']">Mapa Interativo</a>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/image/logo-mobile.png" alt="" width="180" height="auto">
+      </a>
+    </div>
+  </nav>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+<footer>
+  <app-footer></app-footer>
+</footer>

@@ -1,0 +1,89 @@
+<body>
+    <div class="container-fluid">
+        <section><a class="instagram-section-title d-none d-sm-block text-center" href="#!"><i class="fab fa-instagram me-2"></i>Follow me on Instagram</a>
+            <div class="container-fluid px-0">
+              <div class="row">
+                <div class="col-lg-2 col-4 p-0"><a class="d-block instagram-item reset-anchor" href="#!"><img class="img-fluid" src="assets/images/quemsoueu1.jpg" alt="...">
+                    <div class="instagram-item-overlay"><i class="fab fa-instagram"></i></div></a></div>
+                <div class="col-lg-2 col-4 p-0"><a class="d-block instagram-item reset-anchor" href="#!"><img class="img-fluid" src="assets/images/destinos.jpg" alt="...">
+                    <div class="instagram-item-overlay"><i class="fab fa-instagram"></i></div></a></div>
+                <div class="col-lg-2 col-4 p-0"><a class="d-block instagram-item reset-anchor" href="#!"><img class="img-fluid" src="assets/images/dicas.jpg" alt="...">
+                    <div class="instagram-item-overlay"><i class="fab fa-instagram"></i></div></a></div>
+                <div class="col-lg-2 col-4 p-0"><a class="d-block instagram-item reset-anchor" href="#!"><img class="img-fluid" src="assets/images/experiencias.jpg" alt="...">
+                    <div class="instagram-item-overlay"><i class="fab fa-instagram"></i></div></a></div>
+                <div class="col-lg-2 col-4 p-0"><a class="d-block instagram-item reset-anchor" href="#!"><img class="img-fluid" src="assets/images/africa.jpg" alt="...">
+                    <div class="instagram-item-overlay"><i class="fab fa-instagram"></i></div></a></div>
+                <div class="col-lg-2 col-4 p-0"><a class="d-block instagram-item reset-anchor" href="#!"><img class="img-fluid" src="assets/images/carossel3.jpg" alt="...">
+                    <div class="instagram-item-overlay"><i class="fab fa-instagram"></i></div></a></div>
+              </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            var feed = new Instafeed({
+                accessToken: 'https://api.instagram.com/v1/users/571702638042283/media/recent/?count=99&&callback=JSON_CALLBACK&access_token=IGQVJXT0V1eHk3OU83YlhpbURSNjBnRWVvcU1mV0l2a2tLc0ZANR25oT2syQXdlZAUJ6UUhId2xLbThwelNDU2RhMWwyd041eDN3N2FjUk5QSkJXOVZA4ZAGNjNDF6QVRJUDVDOGh5MlBWcHNRamYtN3UyWAZDZD'
+            });
+            feed.run();
+        </script>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-links">
+                        <a>HOME</a>
+                        <a>A NAVEGANTE</a>
+                        <a>PRODUTOS</a>
+                        <a>CONTATO</a>
+                        <a>MAPA INTERATIVO</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="container footer-subscribe">
+                       <p>Receba os conteúdos em primeira mão!</p>
+
+                       <form #f="ngForm" [formGroup]="scribeForm" (ngSubmit)="onSubmit()">
+                            <div class="row form">
+                                <input formControlName="nome" placeholder="Seu Nome">
+                                <input formControlName="emaill" placeholder="Seu E-mail">
+                                <input type="submit" value="Enviar" class="btn btn-info" disable [disabled]="!f.valid">
+                            </div>
+                       </form>
+
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+                    
+                <div class="col-md-3">
+                    <div class="footer-project">
+                        <a class="logo" href="#">
+                            <img src="../../assets/image/logo.png" alt="" width="400" height="auto">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <div class="footer-social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="copy-text">
+                        <p>&copy; 2023 <a href="#">Cultuva Navegavel</a> - Todos os direitos reservados. Conteúdo protegido por direitos autorais. Proibida a reprodução total ou parcial sem autorização da autora.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>

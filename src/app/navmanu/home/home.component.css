@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+body {
+  color: #5a5a5a;
+}
+
+#first-section {
+  margin: 70px auto;
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+}
+#first-section .first-section-title {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#first-section .first-section-title img {
+  max-width: 300px;
+}
+#first-section .row {
+  width: 100%;
+}
+#first-section .row .bag-first-section,
+#first-section .row .map-first-section {
+  padding: 0;
+}
+#first-section .row .bag-first-section img,
+#first-section .row .map-first-section img {
+  width: 100%;
+  display: flex;
+}
+#first-section .row .bag-first-section {
+  margin-top: 300px;
+}
+#first-section .row .map-first-section {
+  margin-top: 60px;
+}
+#first-section .row .text-first-section {
+  font-size: 1rem;
+}
+#first-section .row .col-6 {
+  padding: 0;
+}
+
+.carouselhome {
+  margin-top: 25px;
+  margin-bottom: 4rem;
+  
+}
+
+
+.container.marketing {
+  --bs-gutter-x: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.marketing .row {
+  --bs-gutter-x: 0;
+}
+.marketing .row .col-lg-4 {
+  --bs-gutter-x: 0;
+  padding: 0 5%;
+}
+.marketing .card-img-overlay {
+  border: 1px solid #3aa7bd;
+}
+.marketing .card-img-overlay ::hover {
+  border-color: #3aa7bd;
+}
+.marketing .card-img-overlay .card-title {
+  width: 180px;
+  margin: 0 auto;
+  background: #3aa7bd;
+  padding: 4px 10px;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  top: 101%;
+}
+.marketing .col-lg-4 {
+  margin-bottom: 2.5rem;
+}
+.marketing .col-lg-4 .card {
+  --bs-card-inner-border-radius: 0;
+  border-color: #3aa7bd;
+}
+.marketing .col-lg-4 .card .card-img {
+  padding: 10px;
+}
+.marketing .col-lg-4 .card-img-overlay button {
+  border: 1px solid #3aa7bd;
+}
+
+.featurette-1 {
+  background: #d7ebef;
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px;
+}
+.featurette-1 .featurette {
+  --bs-gutter-x: 0;
+}
+.featurette-1 h2 {
+  margin: 50px auto;
+  text-align: center;
+  font-weight: 600;
+  color: #3aa7bd;
+  text-transform: uppercase;
+}
+.featurette-1 .lead {
+  text-align: center;
+  padding: 0 5%;
+  font-weight: 400;
+  color: #212121;
+}
+.featurette-1 .div-img-a-viajante {
+  margin: 0 auto;
+}
+.featurette-1 .div-img-a-viajante .img-a-viajante {
+  padding: 10px;
+  background: inherit;
+  border-radius: 0;
+  border-color: #ffffff;
+  width: calc(100% - 20px);
+}
+.featurette-1 .card-title {
+  display: block;
+  width: 180px;
+  margin: 10px auto;
+  background: #3aa7bd;
+  padding: 4px 10px;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.featurette-2 {
+  background: #3aa7bd;
+}
+.featurette-2 .featurette {
+  --bs-gutter-x: 0;
+  padding: 20px;
+}
+.featurette-2 .featurette .div-navegando {
+  margin: 0 auto;
+}
+.featurette-2 h2 {
+  margin: 50px auto;
+  text-align: center;
+  font-weight: 600;
+  color: #212121;
+  text-transform: uppercase;
+}
+.featurette-2 .lead {
+  text-align: center;
+  padding: 0 5%;
+  font-weight: 400;
+  color: #fff;
+}
+.featurette-2 .img-navegando {
+  padding: 10px;
+  background: inherit;
+  border-radius: 0;
+  border-color: #ffffff;
+}
+.featurette-2 .card-title {
+  display: block;
+  width: 180px;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 4px 10px;
+  position: relative;
+  color: #3aa7bd;
+  text-transform: uppercase;
+}
+
+.featurette-3 {
+  background: #d7ebef;
+}
+.featurette-3 .featurette {
+  --bs-gutter-x: 0;
+  padding: 20px;
+}
+.featurette-3 h2 {
+  margin: 50px auto 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #3aa7bd;
+  text-transform: uppercase;
+}
+.featurette-3 .lead {
+  text-align: center;
+  padding: 0 5%;
+  font-weight: 400;
+  color: #212121;
+}
+.featurette-3 svg {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background: inherit;
+  border-radius: 0;
+  border-color: #ffffff;
+}
+.featurette-3 .card-title {
+  display: block;
+  width: 180px;
+  margin: 10px auto;
+  background: #3aa7bd;
+  padding: 4px 10px;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+@media (min-width: 500px) {
+  #first-section .row .text-first-section {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+  body .featurette-1 {
+    width: 100%;
+  }
+  body .featurette-1 h2 {
+    margin: 50px auto;
+    text-align: center;
+  }
+  body .featurette-1 .div-img-a-viajante {
+    max-width: 400px;
+  }
+  body .featurette-1 .lead {
+    text-align: center;
+    padding: 0 5%;
+  }
+  body .featurette-1 .row-feature-section {
+    align-self: center;
+  }
+  body .featurette-1 .img-featurette-1 {
+    border-radius: 50%;
+    padding: 10px;
+  }
+  body #first-section .first-section-title {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  body #first-section .first-section-title img {
+    max-width: 700px;
+  }
+  body #first-section .row .bag-first-section {
+    margin-top: 80px;
+  }
+  body #first-section .row .bag-first-section img {
+    max-width: 280px;
+  }
+  body #first-section .row .text-first-section {
+    font-size: 1.4rem;
+  }
+  body #first-section .row .map-first-section {
+    margin-top: 0px;
+  }
+  body #first-section .row .map-first-section img {
+    max-width: 280px;
+  }
+  body .featurette-2 .row-feature-section {
+    align-self: center;
+  }
+  body .featurette-2 .featurette .div-navegando {
+    margin: 0 auto;
+  }
+  body .marketing .row .col-lg-4 {
+    padding: 0 1%;
+  }
+  body .featurette-3 .row-feature-section {
+    align-self: center;
+  }
+  body .featurette-3 .col-md-5 {
+    max-width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .container.marketing {
+    min-width: 992px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container.marketing {
+    min-width: 1200px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container.marketing {
+    min-width: 1400px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .container.marketing {
+    min-width: 1920px !important;
+  }
+  .container .ultimo-post {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}/*# sourceMappingURL=home.component.css.map */
