@@ -8,5 +8,5 @@ export default interface Umdiauruguai {
     createdAt: string;
     userId: string;
     body: string;
-    boda:string;
+    
 }
