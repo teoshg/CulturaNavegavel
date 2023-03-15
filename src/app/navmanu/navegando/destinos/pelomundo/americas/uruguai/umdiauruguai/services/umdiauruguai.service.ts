@@ -24,8 +24,8 @@ export class UmdiauruguaiService {
   }
 
   getUmdiauruguai(): Observable<Umdiauruguai[]> {
-    const placeRef = collection(this.firestore, 'umdiauruguai');
-    return collectionData(placeRef, { idField: 'id' }) as Observable<Umdiauruguai[]>;
+    const umdiauruguaiRef = collection(this.firestore, 'umdiauruguai');
+    return collectionData(umdiauruguaiRef, { idField: 'id' }) as Observable<Umdiauruguai[]>;
   }
 
   createUmdiauruguai(

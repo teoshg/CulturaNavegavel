@@ -44,7 +44,6 @@ export class UmdiauruguaiComponent implements OnInit {
   
 
   async onSubmit() {
-    console.log(this.umdiauruguaiForm.value)
     const response = await this.umdiauruguaiService.addUmdiauruguai(this.umdiauruguaiForm.value);
     console.log(response);
   }
